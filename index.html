@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>UMa Residências</title>
+    <title>UMa Residência - Início</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.css">
@@ -15,9 +20,9 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">UMa Residência</a>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid w-75">
+                <img src="assets/img/logo-residencia.png" class="logo-nav" width="150" height="90" alt="">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,22 +30,16 @@
 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                <span class="sr-only">(current)</span>
-                            </a>
+                        <li class="nav-item nav-active">
+                            <a class="nav-link" href="index.html">Início</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="precario.html">Preçário</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="contacto.html">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -48,18 +47,21 @@
         </nav>
     </header>
 
-    <div class="container">
-        <div class="slide-show my-5">
+    <div class="container-fluid w-75">
+        <div class="slide-show">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="http://residencia.sasuma.pt/img/FOTOS/Panorama1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="http://residencia.sasuma.pt/img/FOTOS/Panorama1.jpg" class="d-block w-100" alt="...">
+                        <img src="http://residencia.sasuma.pt/img/FOTOS/banner1.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="http://residencia.sasuma.pt/img/FOTOS/Panorama1.jpg" class="d-block w-100" alt="...">
+                        <img src="http://residencia.sasuma.pt/img/FOTOS/banner2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="http://residencia.sasuma.pt/img/FOTOS/banner.jpg" class="d-block w-100" alt="...">
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -73,29 +75,32 @@
             </div>
         </div>
 
-        <h3 class="my-4">Nosso Espaço</h3>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 mb-4">
-                <img class="img-fluid" src="assets/img/recepcao.jpg" alt="">
-            </div>
+        <div class="espaco-gallery mt-5">
+            <h3 class="mb-4">Nosso Espaço</h3>
 
-            <div class="col-md-3 col-sm-6 mb-4">
-                <img class="img-fluid" src="assets/img/quartos.jpg" alt="">
-            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4 text-left">
+                    <img class="img-fluid" src="assets/img/recepcao.jpg" alt="">
+                </div>
 
-            <div class="col-md-3 col-sm-6 mb-4">
-                <img class="img-fluid" src="assets/img/bar.jpg" alt="">
-            </div>
+                <div class="col-md-3 col-sm-6 mb-4 text-center">
+                    <img class="img-fluid" src="assets/img/quartos.jpg" alt="">
+                </div>
 
-            <div class="col-md-3 col-sm-6 mb-4">
-                <img class="img-fluid" src="assets/img/equivending.jpg" alt="">
+                <div class="col-md-3 col-sm-6 mb-4 text-center">
+                    <img class="img-fluid" src="assets/img/bar.jpg" alt="">
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb-4 text-right">
+                    <img class="img-fluid" src="assets/img/equivending.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">&copy; UMa Residências 2019</p>
+        <div class="container-fluid w-75">
+            <p class="m-0 text-center text-white">&copy; UMa Residência 2019</p>
         </div>
     </footer>
 

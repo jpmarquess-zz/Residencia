@@ -1,0 +1,50 @@
+header {
+    nav {
+        background-color: #f2f3ff;
+        padding: 35px 0 !important;
+        transition: all .2s ease-in-out;
+
+        .logo-nav {
+            transition: all .2s ease-in-out;
+        }
+
+        .navbar-nav {
+            li {
+                margin-right: 30px;
+
+                a {
+                    color: #000 !important;
+                    font-size: 1em;
+                    line-height: 40px;
+                    letter-spacing: .5px;
+                    text-transform: uppercase;
+                    border-bottom: 2px solid transparent;
+
+                    &:hover {
+                        border-bottom: 2px solid #000;
+                    }
+                }
+            }
+        }
+
+        .nav-active {
+            border-bottom: 2px solid #000;
+
+            a {
+                border-bottom: 0px solid #000 !important;
+            }
+        }
+    }
+}
+
+.navbar-scroll {
+    padding: 15px 0 !important;
+
+    .logo-nav {
+        transform: scale(.8);
+    }
+}
+
+.slide-show {
+    margin-top: 170px;
+}
