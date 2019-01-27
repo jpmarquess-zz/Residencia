@@ -2,7 +2,7 @@ $('.carousel').carousel({
     interval: 2000
 });
 
-/*var $document = $(document);
+var $document = $(document);
 $document.scroll(function () {
-    $("header").toggleClass("fixed-top", $document.scrollTop() >= 300);
-});*/
+    $("nav").toggleClass("navbar-scroll", $document.scrollTop() >= 100);
+});
