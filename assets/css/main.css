@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
 :root {
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -11,9 +11,28 @@
 
 html,
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #f2f3f2;
   width: 100%;
+}
+
+/*
+ * Media Queries
+ */
+@media screen and (max-width: 575px) {
+  .logo-nav {
+    width: 130px;
+    height: 80px;
+  }
+  .espaco-gallery {
+    text-align: center;
+  }
+  .espaco-gallery .img-espaco {
+    text-align: center !important;
+  }
+  .espaco-gallery .img-espaco img {
+    width: 100%;
+  }
 }
 
 header nav {
@@ -32,11 +51,16 @@ header nav .navbar-nav li {
   margin-right: 30px;
 }
 
+header nav .navbar-nav li:last-child {
+  margin-right: 0px;
+}
+
 header nav .navbar-nav li a {
   color: #000 !important;
   font-size: 1em;
-  line-height: 40px;
+  font-weight: 400;
   letter-spacing: .5px;
+  line-height: 40px;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
 }
@@ -64,5 +88,76 @@ header nav .nav-active a {
 
 .slide-show {
   margin-top: 170px;
+}
+
+.espaco-gallery h3 {
+  font-size: 2em;
+  letter-spacing: 1px;
+  color: #000;
+  text-align: center;
+}
+
+.espaco-gallery hr {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 40px;
+  margin-bottom: 55px;
+}
+
+.espaco-gallery .img-espaco figure figcaption p {
+  color: #000;
+  font-size: 1.3em;
+}
+
+.apresentacao {
+  color: #000;
+}
+
+.apresentacao h3 {
+  text-align: center;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.apresentacao hr {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 40px;
+  margin-bottom: 55px;
+}
+
+.apresentacao p {
+  font-size: 1.2em;
+  word-spacing: 5px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.apresentacao h4 {
+  font-size: 1.5em;
+}
+
+.apresentacao ul li {
+  list-style-type: square;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer .row {
+  margin-top: 30px;
+}
+
+footer .row p {
+  font-size: 1em;
+}
+
+footer .row p span {
+  border-bottom: 1px dotted #fff;
+  padding: 0 0 5px;
 }
 /*# sourceMappingURL=main.css.map */
