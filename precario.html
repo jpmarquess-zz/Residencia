@@ -19,13 +19,15 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid w-75">
-                <img src="assets/img/logo-residencia.png" class="logo-nav" width="200" height="120" alt="">
-
+                <a href="index.html">
+                    <img src="assets/img/logo-residencia.png" class="logo-nav" width="150" height="90" alt="">
+                </a>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="toggler-icon fas fa-bars"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -47,9 +49,156 @@
         </nav>
     </header>
 
-    <footer class="py-5 bg-dark">
+    <div class="precario">
+        <div class="container-fluid w-75 precario-wrapper">
+            <h3 class="mb-5">Preçário</h3>
+            
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6 text-center table-wrapper">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Época Baixa<br>13/09 a 24/07</th>
+                                    <th scope="col">Até<br>7 Noites</th>
+                                    <th scope="col">Superior a<br>7 Noites</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Individual</td>
+                                    <td>17.50 €</td>
+                                    <td>15.00 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Duplo *</td>
+                                    <td>12.50 €</td>
+                                    <td>10.50 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Triplo *</td>
+                                    <td>10.00 €</td>
+                                    <td>8.50 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center table-wrapper">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Época Alta<br>25/06 a 12/09</th>
+                                    <th scope="col">Até<br>7 Noites</th>
+                                    <th scope="col">Superior a<br>7 Noites</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Individual</td>
+                                    <td>20.00 €</td>
+                                    <td>18.00 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Duplo *</td>
+                                    <td>15.00 €</td>
+                                    <td>13.50 €</td>
+                                </tr>
+                                <tr>
+                                    <td>Triplo *</td>
+                                    <td>13.50 €</td>
+                                    <td>12.00 €</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-1">* Pessoa/noite</p>
+            <p>* Aos preços apresentados acresce a taxa de IVA em vigor nos casos aplicáveis.</p>
+            <p>* O pagamento do alojamento é feito à entrada.</p>
+        </div>
+
+        <div class="precario-info">
+            <div class="container-fluid w-75">
+                <div class="row mt-5">
+                    <div class="col-md p-2">
+                        <h2>Geral</h2>
+                        <p>Snack-Bar, Recepção 24 horas, Jardim, Quartos não-fumadores, Quartos / Comodidades para pessoas com mobilidade
+                            condicionada, Elevador, Sala para Bagagem.</p>
+
+                        <h2>Internet</h2>
+                        <p>Internet Wireless gratuita, disponível nos quartos e nas áreas públicas.</p>
+
+                        <h2>Cancelamentos</h2>
+                        <p>Se cancelado até 7 dias antes da data de chegada: não será cobrada qualquer penalidade.<br>
+                            Se cancelado tardiamente ou em caso de não comparência: será cobrada a primeira noite.</p>
+
+                        <h2>Crianças</h2>
+                        <p>Para crianças dos 2 aos 12 anos, 50% de desconto.</p>
+                    </div>
+
+                    <div class="col-md p-2">
+                        <h2>Serviços</h2>
+                        <p>Lavandaria, serviço de fax/fotocopiadora, sala com máquinas de venda automática de produtos alimentícios.</p>
+                    
+                        <h2>Estacionamento</h2>
+                        <p>Estacionamento disponível na Residência (nº límitado).<br>Estacionamento pago a 500 metros.</p>
+                    
+                        <h2>Informação da Residência</h2>
+                        <p>A Residência dispôem de um snack-bar com serviços de cafeteria e refeições ligeiras a preços convidativos. 
+                            Dispomos de preços especiais para grupos, mediante solicitação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="check mt-5">
         <div class="container-fluid w-75">
-            <p class="m-0 text-center text-white">&copy; UMa Residência 2019</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Check-in</th>
+                                    <th scope="col">Check-out</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>14:00 - 18:00 horas</td>
+                                    <td>Até às 12:00 horas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5">
+        <div class="container-fluid w-75">
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <p>UMa Residência &copy; 2019</p>
+                </div>
+    
+                <div class="col-md-4 text-center">
+                    <p>Rua de Santa Maria, nº 253</p>
+                </div>
+    
+                <div class="col-md-4 text-right">
+                    <p><span>Desenvolvido por: </span>João Marques e Davide Cafôfo</p>
+                </div>
+            </div>
         </div>
     </footer>
 

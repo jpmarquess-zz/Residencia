@@ -1,7 +1,46 @@
 /*
  * Media Queries
  */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 1360px) {
+    .contacto-wrapper .row {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    footer {
+        .row {
+            div {text-align: center !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .contacto-wrapper .col-md-6:first-child {
+        margin: 30px 0 80px !important;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .espaco-gallery {
+        h3 {
+            font-size: 1.7em !important;
+        }
+    }
+
+    .apresentacao {
+        h3 {
+            font-size: 1.7em !important;
+        }
+
+        p {
+            word-spacing: 3px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
     .logo-nav {
         width: 130px;
         height: 80px;
@@ -16,15 +55,37 @@
             img {
                 width: 100%;
             }
+
+            figcaption {
+                background-color: #000;
+
+                p {
+                    font-size: 1.3em !important;
+                }
+
+            }
         }
     }
 }
 
 header {
+    height: 180px;
+
     nav {
-        background-color: #f2f3ff;
+        background-color: #f2f3f2;
+        opacity: .85;
         padding: 35px 0 !important;
         transition: all .2s ease-in-out;
+
+        .navbar-toggler {
+            background-color: transparent;
+            border: none;
+
+            span {
+                font-size: 1.6em;
+                color: #000 !important;
+            }
+        }
 
         .logo-nav {
             transition: all .2s ease-in-out;
@@ -72,10 +133,6 @@ header {
     }
 }
 
-.slide-show {
-    margin-top: 170px;
-}
-
 .espaco-gallery {
     h3 {
         font-size: 2em;
@@ -93,9 +150,32 @@ header {
 
     .img-espaco {
         figure {
-            figcaption p {
-                color: #000;
-                font-size: 1.3em;
+            overflow: hidden;
+            transition: transform .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+
+                img {
+                    filter: brightness(1);
+                }
+            }
+
+            img {
+                transition: filter .3s ease-in-out;
+                width: 100%;
+                filter: brightness(.8);
+            }
+
+            figcaption {
+                background-color: #000;
+
+                p {
+                    color: #fff !important;
+                    font-size: 1.1em;
+                    padding: 15px 0;
+                }
+
             }
         }
     }
@@ -136,13 +216,75 @@ header {
     }
 }
 
+.precario {
+    color: #000;
+
+    .precario-wrapper {
+        h3 {
+            font-size: 2em;
+            text-align: center;
+        }
+    
+        hr {
+            border-bottom: 3px solid rgba(0, 0, 0, .3);
+            text-align: center;
+            width: 40px;
+            margin-bottom: 55px;
+        }
+    
+        p {
+            font-weight: 700;
+        }
+    }
+
+    .precario-info {
+        h2 {
+            font-size: 1.7em;
+        }
+    }
+}
+
+.check {
+    color: #000;
+
+    th {
+        font-size: 1.2em;
+    }
+
+    td {
+        font-size: 1em;
+    }
+}
+
+.contacto-wrapper {
+    color: #000;
+
+    .row {
+        text-align: center;
+        padding: 0 100px 0 0;
+
+        .col-md-6:first-child {
+            margin-top: 120px;
+
+            span {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .g-maps iframe {
+        width: 100%;
+        height: 500px;
+    }
+}
+
 footer {
     background-color: #000;
     color: #fff;
     padding: 30px 0;
 
     .row {
-        margin-top: 30px;
+        margin-top: 20px;
 
         p {
             font-size: 1em;
